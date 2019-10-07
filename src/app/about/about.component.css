@@ -1,0 +1,22 @@
+.btn {
+  color: #a5f883;
+  cursor: pointer;
+}
+ul li {
+  display: inline;
+  margin-right: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+.center {
+  text-align: center;
+}
+.toStyle {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: oblique;
+}

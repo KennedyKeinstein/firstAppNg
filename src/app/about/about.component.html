@@ -1,0 +1,11 @@
+<p>
+  C'est tout ce qui me concerne pour le moment. <a (click)="getHome()" class="btn"> <b>Aller à l'accueil</b> </a>
+</p>
+<br>
+<p class="center">Don't worry Brother, my <span class="toStyle"> Big Project </span> will come soon !!! <span class="toStyle"> :) KEINSTEIN Di Kennedy.</span>
+
+<br>
+<br>
+<ul *ngFor="let goal of goals; let i = index">
+  <li>{{ (i+1) +' - '+ goal }}</li>
+</ul>

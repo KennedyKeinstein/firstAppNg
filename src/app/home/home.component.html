@@ -1,0 +1,24 @@
+<div class="container color-dark">
+  <div class="col">
+    <p><b>AJOUTER LA LISTE DE TES AMBITIONS</b></p>
+  </div>
+  <div class="col">
+    <p class="center">VOTRE LISTES ({{ itemCount }})</p>
+    <p class="center" style="font-size: 12px;"><i>Cliquez sur le but pour l'enlever de la liste.</i></p>
+  </div>
+</div>
+
+<div class="container color-light" [@goals]="goals.length">
+  <div class="col">
+    <p class="sm" style="font-size: 13px;">Utiliser le formulaire au dessous pour ajouter un but. Qu'est-ce que tu veux ajouter comme un but ?</p>
+    <form>
+      <input type="text" name="item" class="txt" placeholder="Life Goal..." [(ngModel)]="goalTxt"><br><br>
+      <input type="submit" class="btn" [value]="btnTxt" (click)="addItem()" >
+    </form>
+  </div>
+  <div class="col">
+    <p class="life-container" *ngFor="let goal of goals; let i = index" (click)="deleteItem( i )" >
+      {{ goal }}
+    </p>
+  </div>
+</div>
